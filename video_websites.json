@@ -1,0 +1,27 @@
+[
+    {
+        "name": "YouTube",
+        "host": "youtube.com",
+        "urlRegex": "^(?:https?:)?//(?:[a-z0-9-]+\\.)*(youtube(kids)?\\.com|you-tube\\.club)(:\\d+)?/(v/watch\\?(|.*&)v=|v/|live/|watch/v/|watch(_popup)?/?\\?(.*&)*v=|embed/|shorts/|embedded/|attribution_link.*(\\?|&)u=(/|%2F)watch\\?v(=|%3D))(?P<ID>[a-zA-Z0-9_-]+)"
+    },
+    {
+        "name": "YouTube (Configuration)",
+        "urlRegex": "^(?:https?:)?//(?:[a-z0-9-]+\\.)*youtube\\.com(:\\d+)?/get_video_info\\?(|.*&)video_id=(?P<ID>[a-zA-Z0-9_-]+)",
+        "host": "youtube.com"
+    },
+    {
+        "name": "YouTube (Google APIs)",
+        "host": "youtube.googleapis.com",
+        "urlRegex": "^(?:https?:)?//(?:[a-z0-9-]+\\.)*youtube\\.googleapis\\.com(:\\d+)?/v/(?P<ID>[^\\?#&]+)"
+    },
+    {
+        "host": "youtube-nocookie.com",
+        "name": "YouTube-NoCookie",
+        "urlRegex": "^(?:https?:)?//(?:[a-z0-9-]+\\.)*youtube-nocookie\\.com(:\\d+)?/(v|embed)/(?P<ID>[^/\\?#]+)"
+    },
+    {
+        "host": "youtu.be",
+        "name": "YouTu.be",
+        "urlRegex": "^(?:https?:)?//(?:[a-z0-9-]+\\.)*youtu.be(:\\d+)?/(?P<ID>[a-zA-Z0-9_-]+)"
+    }
+]
